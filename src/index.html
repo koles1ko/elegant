@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.min.css">
 
-  <title>Gulp 4 Build Project</title>
+  <title>Elegant</title>
 
 </head>
 
@@ -21,24 +21,33 @@
     <div class="content">
 
       <header>
-        <div class="container-large">
           <div class="header">
             <a href="index.html"><img src="img/raster/head-logo.png" alt="logotype"></a>
-            <div class="burger">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
+            <div class="menu-slide">
+              <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <nav class="header__menu">
+                <ul>
+                  <li><a href="#">about</a></li>
+                  <li><a href="#">work</a></li>
+                  <li><a href="#">team</a></li>
+                  <li><a href="#">blog</a></li>
+                  <li><a href="#">contacts</a></li>
+                </ul>
+              </nav>
             </div>
           </div>
-        </div>
       </header>
       <main>
         <section class="intro" style="background-image: url(img/raster/intro-bg.jpg);">
           <div class="intro__animated"></div>
           <h1>Say Haloa to your Portfolio</h1>
         </section>
-        <section class="about">
+        <section class="about" id="about">
           <div class="container">
             <div class="about__inner">
               <div class="suptitle">Who we Are</div>
@@ -57,7 +66,7 @@
             </div>
           </div>
         </section>
-        <section class="work">
+        <section class="work" id="work">
           <!--разобраться с контейнером-->
           <div class="suptitle">What We Do</div>
           <h3 class="title">Show Your Amazing Work</h3>
@@ -73,7 +82,7 @@
           </div>
         </section>
         <!-- /.work -->
-        <section class="team">
+        <section class="team" id="team">
           <div class="container">
             <div class="suptitle">Who We Are</div>
             <h3 class="title">The Amazing People Behind This</h3>
@@ -124,7 +133,7 @@
           </div>
         </section>
         <!-- /.team -->
-        <section class="blog">
+        <section class="blog" id="blog">
           <div class="container">
             <div class="suptitle">Last Post</div>
             <h3 class="title">We Like to Write</h3>
@@ -133,8 +142,9 @@
               <div class="post__desc">
                 <div class="post__date">14 September 2014</div>
                 <div class="post__title">Change Your Space</div>
-                <div class="post__text">Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt
-                lectores.</div>
+                <div class="post__text">Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum
+                  claritatem. Investigationes demonstraverunt
+                  lectores.</div>
                 <a href="#" class="dft-btn post__view">Read</a>
               </div>
             </div>
@@ -142,7 +152,7 @@
           </div>
         </section>
         <!-- /.blog -->
-        <section class="contacts">
+        <section class="contacts" id="contacts">
           <div class="container">
             <div class="suptitle">Contact Us</div>
             <h3 class="title">Work With Us</h3>
@@ -151,7 +161,7 @@
               <div class="contacts__item">
                 <h4>Location</h4>
                 <div>198 West 21th Street, New
-                York, NY 10010</div>
+                  York, NY 10010</div>
               </div>
               <div class="contacts__item">
                 <h4>Phone</h4>
@@ -160,8 +170,8 @@
               </div>
               <div class="contacts__item">
                 <h4>Fax</h4>
-                <span>+88 (0) 202 0000 000</span>
-                <span>+88 (0) 202 0000 000</span>
+                <div>+88 (0) 202 0000 000</div>
+                <div>+88 (0) 202 0000 000</div>
               </div>
               <div class="contacts__item">
                 <h4>Email</h4>
