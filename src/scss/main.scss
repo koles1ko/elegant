@@ -1,0 +1,286 @@
+// import libs
+@import "../../node_modules/normalize-scss/sass/normalize/import-now";
+
+@import 'components/vars.scss';
+@import 'components/mixins.scss';
+@import 'components/fonts.scss';
+@import 'components/scaffolding.scss';
+
+
+
+//HEADER---------------
+.header{
+  position: fixed;
+}
+//HEADER---------------
+
+//INTRO----------------
+.intro{
+  padding-top: 280px;
+  min-height: 699px;
+  @include back;
+  &__animated{
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%);
+    top: 30px;
+    width: 540px;
+    height: 513px;
+    background-image: url(../img/raster/intro-anim.png);
+    @include back;
+  }
+  h1{
+    font-weight: 300;
+    font-style: italic;
+    font-size: 80px;
+    color: #ffffff;
+    text-align: center;
+  }
+}
+//INTRO----------------
+
+//ABOUT----------------
+.about{
+  padding-top: 100px;
+  padding-bottom: 60px;
+  &__inner{text-align: center;}
+  &__text{
+    color: #021725;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 300;
+    max-width: 700px;
+    margin: 30px auto 40px;
+  }
+}
+//ABOUT----------------
+
+//WORK----------------
+.work{
+  padding: 100px;
+  margin: 0 auto;
+  .gallery{
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1284px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 75px;
+    &__item{
+      width: 317px;
+      height: 300px;
+      margin-bottom: 4px;
+      margin-left: 2px;
+      margin-right: 2px;
+      transition: .4s;
+      &:hover{
+        transform: scale(1.03);
+      }
+      img{
+        display: block;
+      }
+    }
+  }
+}
+//WORK----------------
+
+//TEAM----------------
+.team{
+  padding-bottom: 60px;
+  &__text{
+    text-align: center;
+    color: #021725;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 300;
+    max-width: 700px;
+    margin: 30px auto 40px;
+  }
+  &__items{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+  .item{
+    background-color: #f9f9f9;
+    max-width: 246px;
+    text-align: left;
+    &__info{
+      padding: 15px 15px 30px;
+    }
+    &__job{
+      color: #d4af37;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    &__name{
+      font-size: 21px;
+      color: rgba(#021725, .7);
+      font-weight: 400;
+      margin: 17px 0px 25px;
+    }
+    &__text{
+      font-size: 13px;
+      color: #021725;
+      font-weight: 300;
+      line-height: 23px;
+    }
+  }
+}
+//TEAM----------------
+
+//BLOG----------------
+.blog{
+  padding-top: 100px;
+  text-align: center;
+  .post{
+    display: flex;
+    margin-top: 45px;
+    margin-bottom: 85px;
+    img{
+      display: block;
+    }
+    &__desc{
+      text-align: left;
+      padding: 40px 35px 40px;
+      background-color: #f9f9f9;
+      color: #505d68;
+    }
+    &__date{
+      text-transform: uppercase;
+      font-size: 13px;
+    }
+    &__title{
+      font-size: 30px;
+      margin-top: 10px;
+      margin-bottom: 25px;
+    }
+    &__text{
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 300;
+      margin-bottom: 50px;
+    }
+    &__view{
+      padding: 15px 45px;
+    }
+  }
+}
+//BLOG----------------
+
+//CONTACTS----------------
+.contacts{
+  padding-bottom: 80px;
+  &__inner{
+    background-color: #f9f9f9;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item{
+    padding: 50px 75px;
+    max-width: 385px;
+    width: 100%;
+    font-size: 19px;
+    color: #505d68;
+    font-weight: 300;
+    border: none;
+    text-align: center;
+
+    h4{
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+    }
+    a{
+      color: #505d68;
+    }
+  }
+
+}  
+//CONTACTS----------------
+
+//FOOTER----------------
+footer{
+  background-color: #eeeeee;
+  min-height: 90px;
+  .footer{
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 300;
+    font-size: 16px;
+    color: #505d68;
+    a{
+      color: #505d68;
+    }
+  }
+}
+//FOOTER----------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import 'components/media.scss';
