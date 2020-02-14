@@ -1,7 +1,7 @@
-console.log(divide(4, 2));
-console.log(divide(34, 2));
+// console.log(divide(4, 2));
+// console.log(divide(34, 2));
 
-$(function () {
+$("html,body").scroll(function () {
 
   // $('.menu__btn').on('click', function(){
   //   $('.menu__list').slideToggle();
@@ -16,17 +16,26 @@ $(function () {
   //   document.getElementById('test').classList.add('active');
   // }
 
-  $("#test").click(function() {
-    $("#test").removeClass("active");         
-    $(this).toggleClass("active");
-  })
+  // $("#test").click(function() {
+  //   $("#test").removeClass("active");         
+  //   $(this).toggleClass("active");
+  // })
+
+  var btns = document.getElementsByClassName('qwer');
+  var par = document.getElementsByClassName('cxz');
+  btns[0].onclick = function() {
+    par[0].classList.add("active");
+  }
+  btns[1].onclick = function() {
+    par[0].classList.remove("active");
+  }
 
 
     $('.gallery').slick({
     dots: true,
     arrows: false,
     slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToScroll: 1,
   }); 
   //Обычный одиночный слайдер!
 
