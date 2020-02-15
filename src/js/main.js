@@ -1,44 +1,44 @@
 // console.log(divide(4, 2));
 // console.log(divide(34, 2));
 
-$("html,body").scroll(function () {
+$(function () {
+  $(".burger").on('click', function () {
+    $(".menu-slide").toggleClass('active');
 
-  // $('.menu__btn').on('click', function(){
-  //   $('.menu__list').slideToggle();
-  // }); Для бургера!
-
-  // $(".test").on('click', function(){
-  //   $(".test").toggleClass(".active");
-    
-  // }); 
-
-  // document.getElementById('test').onclick = function() {
-  //   document.getElementById('test').classList.add('active');
-  // }
-
-  // $("#test").click(function() {
-  //   $("#test").removeClass("active");         
-  //   $(this).toggleClass("active");
-  // })
-
-  var btns = document.getElementsByClassName('qwer');
-  var par = document.getElementsByClassName('cxz');
-  btns[0].onclick = function() {
-    par[0].classList.add("active");
-  }
-  btns[1].onclick = function() {
-    par[0].classList.remove("active");
-  }
-
-
-    $('.gallery').slick({
-    dots: true,
-    arrows: false,
-    slidesToShow: 4,
-    slidesToScroll: 1,
   }); 
-  //Обычный одиночный слайдер!
+});
 
+
+//   console.log('hello');
+
+//   $('.burger').on('click', function(){
+//     console.log('hello');
+//   });
+
+// });
+   // $('.menu__btn').on('click', function(){
+   //   $('.menu__list').slideToggle();
+   // }); Для бургера!
+
+  // --------------------------------
+  //  $(".test").on('click', function(){
+  //    $(".test").toggleClass(".active");
+    
+  //  });  додбавление класса
+// --------------------------------
+
+
+
+
+
+  //   $('.gallery').slick({
+  //   dots: true,
+  //   arrows: false,
+  //   slidesToShow: 4,
+  //   slidesToScroll: 1,
+  // }); 
+  //Обычный одиночный слайдер!
+// --------------------------------
   //  $('.slider-for').slick({
   //   slidesToShow: 1,
   //   slidesToScroll: 1,
@@ -54,7 +54,7 @@ $("html,body").scroll(function () {
   //   centerMode: true,
   //   focusOnSelect: true
   // }); Двойной слайдер!
-
+// --------------------------------
 
   // $('.wrapper .tab').on('click', function(event) {
   // var id = $(this).attr('data-id');
@@ -63,8 +63,8 @@ $("html,body").scroll(function () {
   //   $(this).addClass('active');
   //   $('#'+id).addClass('active-tab').fadeIn();
   //   return false;
-  // }); Для табов!
+  // });
+  // Для табов!
   
   
  
-});
