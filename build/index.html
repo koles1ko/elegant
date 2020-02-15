@@ -11,6 +11,7 @@
   <!-- Custom css -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="css/libs.min.css">
 
   <title>Elegant</title>
 
@@ -24,10 +25,10 @@
 
       <header>
         <div class="header__wrapper">
-          <div class="header">
+          <div class="header animated bounceInUp">
             <a href="#"><img src="img/raster/head-logo.png" alt="logotype"></a>
             <div class="menu-slide">
-              <div class="burger" id="burger">
+              <div class="burger">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -35,11 +36,11 @@
               </div>
               <nav class="header__menu">
                 <ul>
-                  <li><a href="#">about</a></li>
-                  <li><a href="#">work</a></li>
-                  <li><a href="#">team</a></li>
-                  <li><a href="#">blog</a></li>
-                  <li><a href="#">contacts</a></li>
+                  <li><a href="#about">about</a></li>
+                  <li><a href="#work">work</a></li>
+                  <li><a href="#team">team</a></li>
+                  <li><a href="#blog">blog</a></li>
+                  <li><a href="#contacts">contacts</a></li>
                 </ul>
               </nav>
             </div>
@@ -76,14 +77,14 @@
           <div class="suptitle">What We Do</div>
           <h3 class="title">Show Your Amazing Work</h3>
           <div class="gallery">
-            <div class="gallery__item"><img src="img/raster/we-do/item-1.jpg" alt=""></div>
-            <div class="gallery__item"><img src="img/raster/we-do/item-2.jpg" alt=""></div>
-            <div class="gallery__item"><img src="img/raster/we-do/item-3.jpg" alt=""></div>
-            <div class="gallery__item"><img src="img/raster/we-do/item-4.jpg" alt=""></div>
-            <div class="gallery__item"><img src="img/raster/we-do/item-5.jpg" alt=""></div>
-            <div class="gallery__item"><img src="img/raster/we-do/item-6.jpg" alt=""></div>
-            <div class="gallery__item"><img src="img/raster/we-do/item-7.jpg" alt=""></div>
-            <div class="gallery__item"><img src="img/raster/we-do/item-8.jpg" alt=""></div>
+            <div class="gallery__item wow animated bounceInLeft"><img src="img/raster/we-do/item-1.jpg" alt=""></div>
+            <div class="gallery__item wow animated bounceInDown"><img src="img/raster/we-do/item-2.jpg" alt=""></div>
+            <div class="gallery__item wow animated bounceInDown"><img src="img/raster/we-do/item-3.jpg" alt=""></div>
+            <div class="gallery__item wow animated bounceInRight"><img src="img/raster/we-do/item-4.jpg" alt=""></div>
+            <div class="gallery__item wow animated bounceInLeft"><img src="img/raster/we-do/item-5.jpg" alt=""></div>
+            <div class="gallery__item wow animated bounceInUp"><img src="img/raster/we-do/item-6.jpg" alt=""></div>
+            <div class="gallery__item wow animated bounceInUp"><img src="img/raster/we-do/item-7.jpg" alt=""></div>
+            <div class="gallery__item wow animated bounceInRight"><img src="img/raster/we-do/item-8.jpg" alt=""></div>
           </div>
         </section>
         <!-- /.work -->
@@ -98,7 +99,7 @@
               consuetudium lectorum.</p>
             <div class="team__items">
 
-              <div class="team__item item">
+              <div class="team__item item wow animated flipInY">
                 <img src="img/raster/team/team-1.jpg" alt="Tobias Schneider">
                 <div class="item__info">
                   <div class="item__job">ceo</div>
@@ -110,7 +111,7 @@
               </div>
               <!-- /.item -->
 
-              <div class="team__item item">
+              <div class="team__item item wow animated flipInY">
                 <img src="img/raster/team/team-2.jpg" alt="Jack Knife">
                 <div class="item__info">
                   <div class="item__job">Designer</div>
@@ -122,7 +123,7 @@
               </div>
               <!-- /.item -->
 
-              <div class="team__item item">
+              <div class="team__item item wow animated flipInY">
                 <img src="img/raster/team/team-3.jpg" alt="Ricki Hall">
                 <div class="item__info">
                   <div class="item__job">Developer</div>
@@ -203,6 +204,9 @@
   <!-- Custom scripts -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="js/libs.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
   <script src="js/main.min.js"></script>
 </body>
 

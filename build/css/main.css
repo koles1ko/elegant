@@ -524,7 +524,8 @@ li {
   background: linear-gradient(to bottom, #94dfff, transparent 28%);
   position: fixed;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 100; }
 
 .header {
   margin: 0 auto;
