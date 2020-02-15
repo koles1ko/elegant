@@ -113,6 +113,7 @@
 .intro{
   padding-top: 280px;
   min-height: 699px;
+  background-image: url(../img/raster/intro-bg.jpg);
   @include back;
   &__animated{
     position: absolute;
