@@ -3,7 +3,8 @@
 
 $(function () {
   $(".burger").on('click', function () {
-    $(".menu-slide").toggleClass('active');
+    $(".header__menu").toggleClass('active');
+    $(".burger").toggleClass('active');
 
   }); 
 

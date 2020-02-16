@@ -1,3 +1,108 @@
+@media (max-width: 810px){
+    .work{
+        padding: 100px 30px 100px;
+        .gallery__item{
+            width: 49%;
+        }
+    }
+    .team{
+        .item{
+            display: flex;
+            max-width: 810px;
+            width: 100%;
+            margin-bottom: 10px;
+            &__info{
+                padding: 15px 15px 15px;
+            }
+            &__name{
+                margin: 10px 0 15px;
+            }
+        }
+    }
+}
 @media (max-width: 750px){
- 
+    .intro{
+        &__animated{
+            display: none;
+        }
+    }
+    .blog{
+        .post{
+            &__desc{
+                text-align: center;
+            }
+            &__date{
+                text-align: center;
+            }
+            img{
+                display: none;
+            }
+        }
+    }
+    .footer{
+        flex-wrap: wrap;
+        div,
+        a{  
+            text-align: center;
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 550px){
+    .header{
+        &__menu{
+            background-color: rgba(22,126,170,1);
+            padding-left: 10px;
+            transform: translate(120%, -75px);
+            &.active{
+                transform: translate(200px, -75px);
+            }
+            ul{
+                flex-direction: column;
+            }
+            li{
+                display: block;
+                text-align: left;
+                & + LI{
+                    margin-top: 10px;
+                }
+            }
+            a{
+                font-size: 20px;
+            }
+        }
+    }
+    .intro{
+        h1{
+            font-size: 65px;
+        }
+    }
+    .work{
+        .gallery__item{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+    .team{
+        padding-bottom: 30px;
+        .item{
+            display: block;
+            max-width: 246px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+    }
+    .contacts{
+        padding-bottom: 10px;
+        img{
+            display: none;
+        }
+        &__item{
+            width: 100%;
+            padding: 30px 20px;
+            a{
+                display: block;
+            }
+        }
+    }
 }

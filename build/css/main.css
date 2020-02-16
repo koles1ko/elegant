@@ -508,16 +508,6 @@ li {
     background-color: #000;
     color: #fff; }
 
-.qwer {
-  height: 30px;
-  width: 200px;
-  background-color: blue; }
-
-.cxz {
-  height: 20px;
-  width: 100px;
-  background-color: red; }
-
 .header__wrapper {
   background: -webkit-gradient(linear, left top, left bottom, from(#167eaa), color-stop(60%, transparent));
   background: -o-linear-gradient(top, #167eaa, transparent 60%);
@@ -525,7 +515,8 @@ li {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 100; }
+  z-index: 100;
+  overflow-x: hidden; }
 
 .header {
   margin: 0 auto;
@@ -536,7 +527,10 @@ li {
       -ms-flex-pack: justify;
           justify-content: space-between;
   overflow-x: hidden;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
+  max-width: 1285px;
   padding: 0 15px;
   padding-top: 10px;
   min-height: 100px;
@@ -544,15 +538,18 @@ li {
   .header__logo-mob {
     display: none; }
   .header__menu {
-    position: absolute;
-    top: 60px;
-    left: 100%;
-    max-width: 1255px;
     width: 100%;
     -webkit-transition: 2s;
     -o-transition: 2s;
     transition: 2s;
+    -webkit-transform: translateX(120%);
+        -ms-transform: translateX(120%);
+            transform: translateX(120%);
     background-color: rgba(22, 126, 170, 0.5); }
+    .header__menu.active {
+      -webkit-transform: translateX(0);
+          -ms-transform: translateX(0);
+              transform: translateX(0); }
     .header__menu ul {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -604,20 +601,17 @@ li {
       top: 25px; }
     .header .burger:hover {
       cursor: pointer; }
-  .header .menu-slide.active .burger span:nth-child(1),
-  .header .menu-slide.active .burger span:nth-child(4) {
+  .header .burger.active span:nth-child(1),
+  .header .burger.active span:nth-child(4) {
     display: none; }
-  .header .menu-slide.active .burger span:nth-child(2) {
+  .header .burger.active span:nth-child(2) {
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
             transform: rotate(45deg); }
-  .header .menu-slide.active .burger span:nth-child(3) {
+  .header .burger.active span:nth-child(3) {
     -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
             transform: rotate(-45deg); }
-  .header .menu-slide.active .header__menu {
-    left: 15px;
-    right: -15px; }
 
 .intro {
   padding-top: 280px;
@@ -676,20 +670,19 @@ li {
     margin: 0 auto;
     margin-top: 75px; }
     .work .gallery__item {
-      width: 317px;
-      height: 300px;
-      margin-bottom: 4px;
-      margin-left: 2px;
-      margin-right: 2px;
+      width: 24%;
       -webkit-transition: .4s;
       -o-transition: .4s;
-      transition: .4s; }
+      transition: .4s;
+      margin-bottom: 5px; }
       .work .gallery__item:hover {
         -webkit-transform: scale(1.03);
             -ms-transform: scale(1.03);
                 transform: scale(1.03); }
       .work .gallery__item img {
-        display: block; }
+        display: block;
+        width: 100%;
+        height: auto; }
 
 .team {
   padding-bottom: 60px; }
@@ -708,11 +701,15 @@ li {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding: 0 10px; }
   .team .item {
     background-color: #f9f9f9;
     max-width: 246px;
     text-align: left; }
+    .team .item img {
+      display: block; }
     .team .item__info {
       padding: 15px 15px 30px; }
     .team .item__job {
@@ -736,11 +733,11 @@ li {
   text-align: center;
   padding-bottom: 60px; }
   .blog .post {
+    margin-top: 45px;
+    margin-bottom: 85px;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    margin-top: 45px;
-    margin-bottom: 85px; }
+    display: flex; }
     .blog .post img {
       display: block; }
     .blog .post__desc {
@@ -767,7 +764,9 @@ li {
   padding-bottom: 80px; }
   .contacts img {
     margin-top: 20px;
-    display: block; }
+    display: block;
+    width: 100%;
+    height: auto; }
   .contacts__inner {
     background-color: #f9f9f9;
     display: -webkit-box;
@@ -778,8 +777,7 @@ li {
     max-width: 767px; }
   .contacts__item {
     padding: 50px 75px;
-    max-width: 383px;
-    width: 100%;
+    width: 50%;
     font-size: 19px;
     color: #505d68;
     font-weight: 300;
@@ -819,3 +817,82 @@ footer {
       color: #505d68; }
       footer .footer a:hover {
         text-decoration: underline; }
+
+@media (max-width: 810px) {
+  .work {
+    padding: 100px 30px 100px; }
+    .work .gallery__item {
+      width: 49%; }
+  .team .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 810px;
+    width: 100%;
+    margin-bottom: 10px; }
+    .team .item__info {
+      padding: 15px 15px 15px; }
+    .team .item__name {
+      margin: 10px 0 15px; } }
+
+@media (max-width: 750px) {
+  .intro__animated {
+    display: none; }
+  .blog .post__desc {
+    text-align: center; }
+  .blog .post__date {
+    text-align: center; }
+  .blog .post img {
+    display: none; }
+  .footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .footer div,
+    .footer a {
+      text-align: center;
+      width: 100%; } }
+
+@media (max-width: 550px) {
+  .header__menu {
+    background-color: #167eaa;
+    padding-left: 10px;
+    -webkit-transform: translate(120%, -75px);
+        -ms-transform: translate(120%, -75px);
+            transform: translate(120%, -75px); }
+    .header__menu.active {
+      -webkit-transform: translate(200px, -75px);
+          -ms-transform: translate(200px, -75px);
+              transform: translate(200px, -75px); }
+    .header__menu ul {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    .header__menu li {
+      display: block;
+      text-align: left; }
+      .header__menu li + LI {
+        margin-top: 10px; }
+    .header__menu a {
+      font-size: 20px; }
+  .intro h1 {
+    font-size: 65px; }
+  .work .gallery__item {
+    width: 100%;
+    margin-bottom: 10px; }
+  .team {
+    padding-bottom: 30px; }
+    .team .item {
+      display: block;
+      max-width: 246px;
+      margin: 0 auto;
+      margin-bottom: 10px; }
+  .contacts {
+    padding-bottom: 10px; }
+    .contacts img {
+      display: none; }
+    .contacts__item {
+      width: 100%;
+      padding: 30px 20px; }
+      .contacts__item a {
+        display: block; } }
