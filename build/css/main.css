@@ -854,7 +854,8 @@ footer {
 
 @media (max-width: 550px) {
   .header__logo-desc {
-    width: 100%; }
+    width: 100%;
+    display: block; }
   .header__menu {
     background-color: #167eaa;
     padding-left: 10px;
