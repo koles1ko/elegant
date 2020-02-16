@@ -50,6 +50,10 @@
 }
 @media (max-width: 550px){
     .header{
+        
+        &__logo-desc{
+            width: 100%;
+        }
         &__menu{
             background-color: rgba(22,126,170,1);
             padding-left: 10px;
