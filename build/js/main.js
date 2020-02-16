@@ -19,8 +19,12 @@ $(function () {
     $('body,html').animate({ scrollTop: top }, 1500);
   });
 
+  
+  
+
 });
 
+new WOW().init();
 
 //   console.log('hello');
 
